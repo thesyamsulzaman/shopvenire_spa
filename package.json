@@ -16,7 +16,7 @@
   "author": "John ahn",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^3.0.6",
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.5",
@@ -24,7 +24,9 @@
     "express": "^4.17.1",
     "express-validator": "^6.7.0",
     "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.12",
     "moment": "^2.24.0",
+    "pg": "^8.5.1",
     "react-redux": "^5.0.7",
     "saslprep": "^1.0.3",
     "supports-color": "^7.1.0"

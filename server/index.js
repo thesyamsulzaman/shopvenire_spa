@@ -19,7 +19,7 @@ app.use('/uploads', express.static('uploads'));
 //https://stackoverflow.com/questions/48914987/send-image-path-from-node-js-express-server-to-react-client
 
 app.use('/api/users', require('./routes/users'));
-app.use('/api/products', require('./routes/products'));
+//app.use('/api/products', require('./routes/products'));
 
 
 
