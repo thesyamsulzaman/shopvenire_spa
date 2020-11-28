@@ -1,0 +1,4 @@
+Fully fledged E-Commerce app, build with Node, Express and PostgreSQL in the
+backend, and React as a Frontend
+
+
