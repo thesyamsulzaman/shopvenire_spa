@@ -1,30 +1,27 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const cors = require('cors')
+const cors = require("cors");
+const jwt = require("jsonwebtoken");
 
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
+require("dotenv").config();
 
-app.use(cors())
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use('/uploads', express.static('uploads'));
+app.use("/uploads", express.static("uploads"));
 
-
-//use this to show the image you have in node js server to client (react js)
-//https://stackoverflow.com/questions/48914987/send-image-path-from-node-js-express-server-to-react-client
-
-app.use('/api/users', require('./routes/users'));
-//app.use('/api/products', require('./routes/products'));
+app.use("/api/user", require("./routes/users"));
+app.use('/api/products', require('./routes/products'));
 
 
 
-
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 
 // define custom error message on not found routes
 app.use((req, res, next) => {
@@ -44,5 +41,5 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`[backend] Server Listening on ${port}`)
+  console.log(`[backend] Server Listening on ${port}`);
 });

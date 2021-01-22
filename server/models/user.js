@@ -10,5 +10,8 @@ module.exports = {
   },
   create(user) {
     return db("users").insert(user, "id");
+  },
+  delete(id) {
+    return db("users").where("id", id).del();
   }
 };

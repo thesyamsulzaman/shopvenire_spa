@@ -2,6 +2,28 @@ const { check, validationResult, body } = require("express-validator");
 const User = require("../models/user");
 
 module.exports = {
+  _runValidation(req, res) {
+    const Errors = validationResult(req);
+    if (!Errors.isEmpty()) return res.json(Errors.mapped());
+  },
+  loginValidator() {
+    return [
+      check("username").not().isEmpty().withMessage("Username is empty"),
+      body("username").custom(value => {
+        return User.findUserByUsername(value).then(user => {
+          if (user.length === 0) {
+            return Promise.reject("User not found ");
+          }
+        });
+      }),
+      check("password")
+        .not()
+        .isEmpty()
+        .isLength({ min: 5 })
+        .withMessage("Password should be more than 5 characters")
+    ];
+  },
+
   registerValidator() {
     return [
       check("username").not().isEmpty().withMessage("Username is required"),

@@ -12,8 +12,6 @@ exports.seed = function(knex) {
           email: "thesyamsulzaman@gmail.com",
           password: "aingsam",
           role: 1,
-          token: "tokenOne",
-          token_expired: "TokenExpiredOne"
         },
       ], "id");
     });

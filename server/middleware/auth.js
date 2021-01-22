@@ -1,21 +1,12 @@
-//const { User } = require('../models/User');
+const jwt = require("jsonwebtoken");
 
-let auth = 0;
-//let auth = (req, res, next) => {
-  //let token = req.cookies.w_auth;
+module.exports = (req, res, next) => {
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
-  //User.findByToken(token, (err, user) => {
-    //if (err) throw err;
-    //if (!user)
-      //return res.json({
-        //isAuth: false,
-        //error: true
-      //});
-
-    //req.token = token;
-    //req.user = user;
-    //next();
-  //});
-//};
-
-module.exports = { auth };
+  jwt.verify(token, process.env.ACCESS_TOKEN_KEY, (err, user) => {
+    if (err) res.json({message: "Auth Failed"});
+    req.body.user = user;
+    next();
+  });
+}
