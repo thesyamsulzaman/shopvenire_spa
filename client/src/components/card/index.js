@@ -5,6 +5,6 @@ export const CategoryCard = ({ children, ...props }) => {
   return <CategoryContainer {...props}>{children}</CategoryContainer>;
 };
 
-CategoryCard.Title = function ({ children, ...props }) {
+CategoryCard.Link = function({ children, ...props }) {
   return <Title {...props}> {children}</Title>;
 };

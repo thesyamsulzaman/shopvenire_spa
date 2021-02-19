@@ -1,16 +1,20 @@
-import { styled } from "styled-components";
-import { Link } from "styled-components";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Title = styled(Link)`
   font-size: 1.2rem;
   font-weight: bold;
-  z-index: 10;
+  z-index: 1;
   color: #fff;
+  text-decoration:none;
+  &:hover {
+    color: gray;
+  }
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   position: relative;
-  margin-top: 1.2em;
+  margin-top: 1em;
   min-height: 150px;
   height: auto;
   width: 100%;
