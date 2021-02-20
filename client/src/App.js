@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Home, Login, Register } from "./pages/";
+import { Home, Login, Register, Products } from "./pages/";
 import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
 
 export default () => {
@@ -9,6 +9,7 @@ export default () => {
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
+        <Route path="/products" component={Products} />
       </Switch>
     </BrowserRouter>
   );

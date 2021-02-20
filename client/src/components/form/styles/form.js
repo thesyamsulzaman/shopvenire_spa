@@ -19,7 +19,7 @@ export const Group = styled.div`
 
 export const Input = styled.input`
   font-size: 1rem;
-  padding: 0.5em 0.3em;
+  padding: 0.5em 0.5em;
 `;
 
 export const SubmitButton = styled(Input)`
@@ -39,4 +39,3 @@ export const Form = styled.form`
   margin-top: 1.2em;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 `;
-
