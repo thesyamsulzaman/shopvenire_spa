@@ -5,9 +5,7 @@ import { Card } from "../components/card";
 export function ProductsContainer({ children, ...props }) {
   return (
     <Products>
-      <h2> All Products</h2>
       <Products.Container>
-
         <Card>
           <Card.Image />
           <Card.Body>

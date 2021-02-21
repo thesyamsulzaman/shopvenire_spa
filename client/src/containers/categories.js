@@ -9,7 +9,6 @@ import { CategoryCard } from "../components/card";
 export function CategoriesContainer({ children, ...props }) {
   return (
     <Categories>
-      <h2> Categories</h2>
       <Categories.Container>
         {categoryItems.map(category => {
           return (

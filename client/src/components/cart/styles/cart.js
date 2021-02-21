@@ -42,7 +42,6 @@ export const Image = styled.div`
 export const Info = styled.div`
   height: 80px;
   width: auto;
-  background: blue;
   flex: 1;
   margin-left: .7em;
 `

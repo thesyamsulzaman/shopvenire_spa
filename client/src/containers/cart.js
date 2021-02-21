@@ -8,7 +8,15 @@ export function CartContainer({ children, ...props }) {
         <Cart.Items>
           <Cart.Item>
             <Cart.Image />
-            <Cart.Info>Desc</Cart.Info>
+            <Cart.Info>
+              <p>CartTitle</p>
+              <span>CartBrand</span>
+              <div>
+                <button>-</button>
+                <p>3</p>
+                <button>+</button>
+              </div>
+            </Cart.Info>
           </Cart.Item>
           <hr />
           <Cart.Item>
@@ -23,7 +31,9 @@ export function CartContainer({ children, ...props }) {
           <hr />
           <Cart.Item>
             <Cart.Image />
-            <Cart.Info>Desc</Cart.Info>
+            <Cart.Info>
+              
+            </Cart.Info>
           </Cart.Item>
           <hr />
         </Cart.Items>

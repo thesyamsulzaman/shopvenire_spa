@@ -3,11 +3,13 @@ import FormContainer, {
   FormWrapper as Form,
   FormGroup,
   Input,
-  SubmitButton
+  SubmitButton,
+  Register
 } from "../components/form";
 
 export function RegisterContainer({ children, ...props }) {
   return (
+    <Register>
     <FormContainer>
       <Form>
         <FormGroup>
@@ -35,5 +37,6 @@ export function RegisterContainer({ children, ...props }) {
         </FormGroup>
       </Form>
     </FormContainer>
+    </Register>
   );
 }
