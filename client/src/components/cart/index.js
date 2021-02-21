@@ -6,7 +6,15 @@ import {
   Checkout,
   Item,
   Image,
-  Info
+  Info,
+  BrandInfo,
+  TitleInfo,
+  Amount,
+  Action,
+  Price,
+  Remove,
+  Total,
+  Proceed
 } from "./styles/cart";
 
 export default function Cart({ children, ...props }) {
@@ -33,6 +41,38 @@ Cart.Info = function CartInfo({ children, ...props }) {
   return <Info {...props}>{children}</Info>;
 };
 
+Cart.TitleInfo = function CartTitleInfo({ children, ...props }) {
+  return <TitleInfo {...props}>{children}</TitleInfo>;
+};
+
+Cart.BrandInfo = function CartBrandInfo({ children, ...props }) {
+  return <BrandInfo {...props}>{children}</BrandInfo>;
+};
+
+Cart.Action = function CartAction({ children, ...props }) {
+  return <Action {...props}>{children}</Action>;
+};
+
+Cart.Amount = function CartAmount({ children, ...props }) {
+  return <Amount {...props}>{children}</Amount>;
+};
+
+Cart.Price = function CartPrice({ children, ...props }) {
+  return <Price {...props}>{children}</Price>;
+};
+
+Cart.Remove = function CartRemove({ children, ...props }) {
+  return <Remove {...props}>{children}</Remove>;
+};
+
+Cart.Total = function CartTotal({ children, ...props }) {
+  return <Total {...props}>{children}</Total>;
+};
+
 Cart.Checkout = function CartCheckout({ children, ...props }) {
   return <Checkout {...props}>{children}</Checkout>;
+};
+
+Cart.Proceed = function CartProceed({ children, ...props }) {
+  return <Proceed {...props}>{children}</Proceed>;
 };
