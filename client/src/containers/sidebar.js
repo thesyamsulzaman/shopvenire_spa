@@ -1,38 +1,6 @@
 import React from "react";
 import Sidebar, { SearchForm } from "../components/sidebar";
-
-const sidebarCategories = [
-  {
-    id: 1,
-    title: "Hoodies",
-    path: "/hoodies"
-  },
-  {
-    id: 2,
-    title: "Bracelets",
-    path: "/bracelets"
-  },
-  {
-    id: 3,
-    title: "Outerwears",
-    path: "/outerwears"
-  },
-  {
-    id: 4,
-    title: "Keychains",
-    path: "/keychains"
-  },
-  {
-    id: 5,
-    title: "Hoodies",
-    path: "/hoodies"
-  },
-  {
-    id: 6,
-    title: "Necklaces",
-    path: "/necklaces"
-  }
-];
+import {categoryItems as sidebarCategories} from "../fixtures/categories"
 
 export default function SidebarContainer({ children, ...props }) {
   return (
@@ -43,7 +11,7 @@ export default function SidebarContainer({ children, ...props }) {
         {sidebarCategories.map(category => {
           return (
             <Sidebar.ListItem key={category.id}>
-              <Sidebar.Link to={category.path}>{category.title}</Sidebar.Link>
+              <Sidebar.Link to={category.link}>{category.title}</Sidebar.Link>
             </Sidebar.ListItem>
           );
         })}

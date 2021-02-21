@@ -5,6 +5,7 @@ export default function Products({ children, ...props }) {
   return <Frame {...props}>{children}</Frame>;
 }
 
+
 Products.Container = function ProductsContainer({ children, ...props }) {
   return <Container {...props}>{children}</Container>;
 };
