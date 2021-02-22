@@ -8,15 +8,14 @@ exports.up = function (knex) {
       table.string("last_name");
       table.string("email").unique("email");
       table.string("password");
-      table.integer("role").defaultTo(0);
+      table.integer("isAdmin").defaultTo(0);
     })
-    .createTable("products", function(table) {
-      table.increments("id");
-      table.string("title");
-      table.string("size").nullable();
-      table.string("color").nullable();
-
-    })
+    //.createTable("products", function(table) {
+      //table.increments("id");
+      //table.string("title");
+      //table.string("size").nullable();
+      //table.string("color").nullable();
+    //})
 };
 
 exports.down = function (knex) {

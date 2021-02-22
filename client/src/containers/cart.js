@@ -40,6 +40,40 @@ export function CartContainer({ children, ...props }) {
           </Cart.Item>
           <hr />
 
+
+          <Cart.Item>
+            <Cart.Image />
+            <Cart.Info>
+              <Cart.TitleInfo to="/products">Men's wool hoodie</Cart.TitleInfo>
+              <Cart.BrandInfo to="/products">Natural Black</Cart.BrandInfo>
+              <Cart.Action>
+                <button>-</button>
+                <Cart.Amount>3</Cart.Amount>
+                <button>+</button>
+              </Cart.Action>
+              <Cart.Price>$14</Cart.Price>
+              <Cart.Remove>&times;</Cart.Remove>
+            </Cart.Info>
+          </Cart.Item>
+          <hr />
+
+
+          <Cart.Item>
+            <Cart.Image />
+            <Cart.Info>
+              <Cart.TitleInfo to="/products">Men's wool hoodie</Cart.TitleInfo>
+              <Cart.BrandInfo to="/products">Natural Black</Cart.BrandInfo>
+              <Cart.Action>
+                <button>-</button>
+                <Cart.Amount>3</Cart.Amount>
+                <button>+</button>
+              </Cart.Action>
+              <Cart.Price>$14</Cart.Price>
+              <Cart.Remove>&times;</Cart.Remove>
+            </Cart.Info>
+          </Cart.Item>
+          <hr />
+
         </Cart.Items>
         <Cart.Checkout>
           <Cart.Total>

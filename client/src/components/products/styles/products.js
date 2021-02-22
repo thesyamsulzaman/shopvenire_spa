@@ -5,7 +5,6 @@ export const Frame = styled.section`
   max-width: 1180px;
   width: 95%;
   margin: 0 auto;
-  margin-top: .81em;
 `
 export const Container = styled.div`
   padding: .51em 0; 
