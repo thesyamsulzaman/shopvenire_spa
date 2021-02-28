@@ -1,4 +1,3 @@
-
 const enviroment = require("../database/knexfile");
 const db = require("knex")(enviroment.development);
 

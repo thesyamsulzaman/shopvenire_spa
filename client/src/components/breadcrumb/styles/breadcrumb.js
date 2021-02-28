@@ -6,23 +6,28 @@ export const Frame = styled.div`
   width: 95%;
   margin: 0 auto;
   height:auto;
-  padding:.8em 0;
+  padding:.7em 0;
 `;
 
 export const List = styled.ul`
-  display:flex;
+  display:block;
 `;
 
 export const Item = styled.li`
-  margin: 0 .5em;
-  &:first-child {
-    margin-left:0;
-  }
+  margin: 0 .4em;
+  display:block;
+  border: 1px solid blue;
+
+  &:first-child { margin-left:0; }
+  &:last-child {}
 `;
 
 export const Route = styled(Link)`
-  font-weight: bold;
+  font-family: Inter Bold;
+  text-decoration:none;
   color: #454547;
   font-size: 0.9rem;
+
+  &:hover { text-decoration: underline; }
 
 `;

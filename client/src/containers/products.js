@@ -10,7 +10,7 @@ export function ProductsContainer({ children, ...props }) {
           <Card.Image />
           <Card.Body>
             <Card.Info>
-              <Card.Title to="/products"> Redist Long Sleeve Hoodie </Card.Title>
+              <Card.Title to="/products/2"> Redist Long Sleeve Hoodie </Card.Title>
               <Card.Brand to="/products"> Attractive Fashion</Card.Brand>
             </Card.Info>
             <Card.Price>$19</Card.Price>
@@ -21,7 +21,7 @@ export function ProductsContainer({ children, ...props }) {
           <Card.Image />
           <Card.Body>
             <Card.Info>
-              <Card.Title to="/products"> Redist Long Sleeve Hoodie </Card.Title>
+              <Card.Title to="/products/2"> Redist Long Sleeve Hoodie </Card.Title>
               <Card.Brand to="/products"> Attractive Fashion</Card.Brand>
             </Card.Info>
             <Card.Price>$19</Card.Price>
@@ -32,7 +32,7 @@ export function ProductsContainer({ children, ...props }) {
           <Card.Image />
           <Card.Body>
             <Card.Info>
-              <Card.Title to="/products"> Redist Long Sleeve Hoodie </Card.Title>
+              <Card.Title to="/products/2"> Redist Long Sleeve Hoodie </Card.Title>
               <Card.Brand to="/products"> Attractive Fashion</Card.Brand>
             </Card.Info>
             <Card.Price>$19</Card.Price>

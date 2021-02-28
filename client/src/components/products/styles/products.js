@@ -7,7 +7,6 @@ export const Frame = styled.section`
   margin: 0 auto;
 `
 export const Container = styled.div`
-  padding: .51em 0; 
   display:grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
